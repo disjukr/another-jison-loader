@@ -1,6 +1,6 @@
 {
   "name": "another-jison-loader",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "webpack jison loader",
   "main": "index.js",
   "scripts": {

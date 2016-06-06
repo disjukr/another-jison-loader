@@ -13,10 +13,10 @@ module.exports = function (input) {
         options.moduleType = 'js';
         var moduleName = options.moduleName || 'parser';
         return [
+            parser.generate(options),
             'exports.parser = ' + moduleName + ';',
             'exports.Parser = ' + moduleName + '.Parser;',
-            'exports.parse = ' + moduleName + '.parse.bind(' + moduleName + ');',
-            parser.generate(options)
+            'exports.parse = ' + moduleName + '.parse.bind(' + moduleName + ');'
         ].join('\n');
     }
 };
